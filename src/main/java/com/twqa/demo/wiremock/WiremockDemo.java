@@ -28,12 +28,6 @@ public class WiremockDemo implements CommandLineRunner {
     }
 
     private static void runDemo(){
-        configureFor(host, port);
-        stubFor(get(urlMatching("/api/demo"))
-                .willReturn(aResponse()
-                        .withStatus(200)
-                        .withStatusMessage("Everything was just fine!")
-                        .withHeader("Content-Type", "text/plain")
-                        .withBody("Stub For demo1 (Java)")));
+        // Add your stub here
     }
 }
