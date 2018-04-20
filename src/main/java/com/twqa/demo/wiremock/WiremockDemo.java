@@ -23,7 +23,6 @@ public class WiremockDemo implements CommandLineRunner {
     public void run(String... args) {
         wireMockService.start();
         runDemo();
-        OtherDemos.runStubs();
         System.out.println("===== My stub started =====");
     }
 
