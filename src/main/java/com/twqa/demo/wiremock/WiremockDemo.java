@@ -22,6 +22,7 @@ public class WiremockDemo implements CommandLineRunner {
     @Override
     public void run(String... args) {
         wireMockService.start();
+        configureFor(host, port);
         runDemo();
         System.out.println("===== My stub started =====");
     }
